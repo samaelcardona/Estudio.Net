@@ -1,119 +1,126 @@
--------------------------------------------------------------------------
-POO object-oriented programming
+Programación Orientada a Objetos (POO)
 
-Clase
-es una especie de "plantilla" en la que se definen los atributos y métodos predeterminados 
-de un tipo de objeto. 
+	La Programación Orientada a Objetos (POO) es un paradigma que organiza el código en torno a "objetos", que son instancias de "clases". Estas son algunas definiciones y ejemplos adicionales:
+	
+	Clase: Es una plantilla que define atributos y métodos. Por ejemplo, una clase "Coche" podría tener atributos como "color" y "modelo", y métodos como "arrancar" y "detener".
+	
+		class Coche {
+		  color: string;
+		  modelo: string;
+		
+		  constructor(color: string, modelo: string) {
+		    this.color = color;
+		    this.modelo = modelo;
+		  }
+		
+		  arrancar() {
+		    console.log("El coche ha arrancado.");
+		  }
+		
+		  detener() {
+		    console.log("El coche se ha detenido.");
+		  }
+		}
+		
+		// Crear una instancia de la clase Coche
+		const miCoche = new Coche("Rojo", "Sedán");
+		miCoche.arrancar();
+	
+	Herencia: Permite que una clase herede atributos y métodos de otra. Por ejemplo, una clase "Camioneta" podría heredar de la clase "Coche".
+	
+		class Camioneta extends Coche {
+		  carga: number;
+		
+		  constructor(color: string, modelo: string, carga: number) {
+		    super(color, modelo);
+		    this.carga = carga;
+		  }
+		}
+		
+		// Crear una instancia de la clase Camioneta
+		const miCamioneta = new Camioneta("Azul", "Pickup", 500);
+		miCamioneta.arrancar();
+	
+	Abstracciones: Definir la estructura de una clase es aislar los componentes esenciales. Por ejemplo, una clase "Figura" podría tener métodos como "calcularÁrea", sin preocuparse de si es un cuadrado o un círculo.
+	
+	
+	Programación Concurrente y Multihilo
+	
+	Hilos (Threads): Los hilos son espacios de ejecución independientes. En un ejemplo, podríamos tener un hilo para descargar datos y otro para mostrar una interfaz de usuario.
+	
+		using System.Threading;
+		
+		void DescargarDatos() {
+		  // Código para descargar datos
+		}
+		
+		Thread hiloDescarga = new Thread(DescargarDatos);
+		hiloDescarga.Start();
+	
+	Programación Paralela: Con tareas, podemos realizar operaciones concurrentes y paralelas. En un ejemplo, podríamos realizar varias operaciones al mismo tiempo.
+	
+		using System;
+		using System.Threading.Tasks;
+		
+		async Task RealizarOperaciones() {
+		  Task operacion1 = OperacionAsincronica();
+		  Task operacion2 = OperacionAsincronica();
+		
+		  await Task.WhenAll(operacion1, operacion2);
+		  Console.WriteLine("Operaciones completadas");
+		}
+	
+	Programación Multihilo: Implica ejecutar procesos en hilos independientes. Un ejemplo podría ser una aplicación que realiza 	cálculos intensivos en un hilo mientras responde a eventos de usuario en otro.
+	
+		using System;
+		using System.Threading;
+		
+		void HiloCalculos() {
+		  // Cálculos intensivos
+		}
+		
+		void HiloInterfazUsuario() {
+		  // Interacción con el usuario
+		}
+		
+		Thread hiloCalculos = new Thread(HiloCalculos);
+		Thread hiloInterfazUsuario = new Thread(HiloInterfazUsuario);
+		
+		hiloCalculos.Start();
+		hiloInterfazUsuario.Start();
 
-Herencia (Herarquizar)
-es el medio del cual una clase se deriva de otra de manera que extiende su funcionalidad.
+Microservicios
 
-Objeto
-es una Instancia de una clase. 
-
-Método
-Algoritmo asociado a un objeto (o a una clase de objetos).
-
-Evento
-Es un suceso en el sistema como la creacion de un evento.
-
-Atributos
-Características que tiene la clase.
-
-Abstracciones
-Definir la estructura de una clase 
-es la acción de aislar los componentes esenciales de un objeto de aquellos que no lo son.
-Clase abstracta 
-puede tener metodos concretos y metodos abstractos no se instancia como objeto.
-interfaz 
-define un contrato que una clase puede implementar solo define la firma de los metodos de la clase a implementar.
-
-Encapsulamiento
-el encapsulamiento es cuando se realiza un ocultamiento del estado.
-Se colocan los elementos a un mismo nivel de abstraccion (private public)
-Modificadores de acceso
-public	Access is not restricted.
-protected	Access is limited to the containing class or types derived from the containing class.
-internal	Access is limited to the current assembly.
-protected internal	Access is limited to the current assembly or types derived from the containing class.
-private	Access is limited to the containing type.
-private protected	Access is limited to the containing class or types derived from the containing class within the current assembly.
-
-Polimorfismo
-Una clase se pueda ser invocada por otra con distintos objetos.
-hacer que una clase se comporte como otra. Vehiculo -- moto carro bicicleta heredan de vehiculo.
-Polimorfismo en tiempo compilacion (sobrecarga de metodos) Cuando tengo metodos con el mismo llamado pero recibe diferentes atributos 
-Polimorfismo en tiempo de ejecucion (Metoods virtuales ) Cuando tengo varias clases y se heredan de una sola y cada una requiere un metodo diferente entonces la sobre escribo con override para usar la de la clase y no la de la herencia. 
-
--------------------------------------------------------------------------
-
-Standalone applications
-
-Aplicaciones de escritorio, o monoliticas que no requieren conexion a red. 
-
--------------------------------------------------------------------------
-Programacion Concurrent 
-
-Hilos (Threads)  }
-System.Threading Espacios de ejecucion independientes.
-Thread thread = new Thread(DoWork);
-
-Tareas (Tasks) y Programación Paralela:
-System.Threading.Tasks Se utiliza para la programacion asincronica y paralela
-palabras clave como async y await 
-
----------------------------------------------------------------------------
-Multithreading Programming
-
-Programacion multihilo es poner a ejecutar dos procesos en hilos independientes para que se ejecuten al mismo tiempo, 
-Es importante la sincronizacion de hilos  y hay herramientas como lock, Monitor, Mutex o Semaphore 
-lock es mas simple bloquea el hilo para usar elementos compartidos pero solo por el.
-monitor ofrece funcionalidades adicionales como enter exit wait pulse permite bloquearlo manual
-mutex puede sincronizar recursos compartidos entre múltiples procesos alcance mas amplio.
-semaphore permite controlar el acceso por un numero de hilos, genera mayor flexibilidad. 
-
-----------------------------------------------------------------------------
-Microservicios 
-
-Principios de Diseño para Microservicios:
-	Desacoplamiento:
-	Cada microservicio debe ser independiente y tener su propia lógica de negocio. Los servicios deben estar fuertemente desacoplados para que puedan evolucionar y escalarse de forma independiente.
-
-	Límites de Contexto:
-	Cada microservicio debe definir claramente su límite de contexto y ser responsable de una sola funcionalidad específica.
-
-	Comunicación entre Microservicios:
-	La comunicación entre microservicios puede realizarse a través de API RESTful, gRPC, mensajería asincrónica o eventos, según las necesidades del sistema.
-
-	Monitorización y Tolerancia a Fallos:
-	Es fundamental implementar técnicas de monitorización y manejo de errores en cada microservicio para garantizar la robustez del sistema.
+	Desacoplamiento: Cada microservicio es independiente. Por ejemplo, un servicio de autenticación no necesita conocer los detalles internos de un servicio de pago.
+	
+	Límites de Contexto: Cada microservicio se centra en una funcionalidad específica. Un servicio de correo electrónico se encarga solo del envío de correos.
+	
+	Comunicación entre Microservicios: Puede realizarse mediante API RESTful. Un servicio puede exponer endpoints para que otros servicios puedan consumir sus funciones.
+	
+	Monitorización y Tolerancia a Fallos: Cada microservicio debe ser monitorizado para asegurar su funcionamiento. Se implementan manejadores de errores para garantizar la robustez del sistema.
 
 WCF (Windows Communication Foundation)
-Marco de trabajo para servicios web 
-Con protocolos HTTP, TCP, Named Pipes. 
-con diferentes formatos de mensaje como XML, JSON y binario
 
-Códigos de Estado Comunes en HTTP:
-1xx: Respuestas Informativas: Indican que la solicitud ha sido recibida y el servidor continúa procesándola.
-2xx: Respuestas Exitosas: Indican que la solicitud fue recibida, entendida y aceptada exitosamente.
-3xx: Redirecciones: Indican que el cliente necesita realizar más acciones para completar la solicitud.
-4xx: Errores del Cliente: Indican errores causados por acciones del cliente.
-5xx: Errores del Servidor: Indican que el servidor no pudo completar una solicitud válida.
+	WCF es un marco de trabajo para servicios web que permite la comunicación entre aplicaciones. Por ejemplo, podríamos tener un servicio que recibe y procesa pedidos en un sistema de comercio electrónico.
 
+ASP.NET y ASP.NET Core
 
-ASP.NET
-Se usaba como web.forms y mvc  en .Net framework 
-
-ASP.NET Core 
-Evolucion de asp.net, ya es multiplataforma 
-
-ASP.NET MVC Modelo vista controlador
-Es un marco de trabajo que implementa el patron de diseño MVC 
----------------------------------------------------------------------------
-WEB API
-
-Web API en .NET se refiere a la capacidad de crear servicios web HTTP RESTful 
-Como los microservicios anteriores 
-
-
-----------------------------------------------------------------------------
+	ASP.NET: Utilizado como web.forms y MVC en .NET Framework.
+	
+	ASP.NET Core: Es una evolución de ASP.NET y es multiplataforma.
+	
+	ASP.NET MVC (Modelo Vista Controlador)
+	
+		Es un marco de trabajo que organiza la aplicación en tres componentes: el Modelo (datos y lógica), la Vista (interfaz de usuario) y el Controlador (maneja las interacciones entre Modelo y Vista).
+	
+	Web API en .NET
+	
+		Web API en .NET: Permite crear servicios web HTTP RESTful. Un ejemplo podría ser un servicio que devuelve datos de productos en formato JSON.
+		[Route("api/productos")]
+		public class ProductosController : ControllerBase {
+		  [HttpGet]
+		  public IActionResult ObtenerProductos() {
+		    // Lógica para obtener y devolver productos
+		    return Ok(productos);
+		  }
+		}
