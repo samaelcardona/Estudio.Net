@@ -1,0 +1,362 @@
+1. Could you tell me about yourself and describe your background in brief? familia yo
+
+	So i am from samana caldas i am 28 years old I live in Manizales 
+	with my mom and my father, i have 6 brothers they are bigger than me, 
+	I have girlfriend and I am going to marry her. 
+	i am system engeneer, i like swim, ride motorcicle and bicicle, I like learn alot about everything, 
+	So I know mechanic, carpentry, electricity. I like to develop software and build things, 
+	its good see  .. 
+
+2. How did you hear about this position?  porque envie la hv
+
+	So i was talking with a friend tha work in globant and
+	I tell him that I want to change my work for other work that improve my english 
+	and he tell me send the CV globant is the place for do that.
+
+3. What type of work environment do you prefer? que ambiente de trabajo me gusta
+
+	I like fast-paced work environments because 
+	they make me feel like I’m always learning and growing
+
+4. How do you deal with pressure or stressful situations? estres
+
+	when i was in a stressful situation i take a time to brief and put  the things 
+	in order and prioritize the value things. 
+
+5. Do you prefer working independently or on a team? como me gusta trabajar
+
+	I prefer work in a team, We can share knowledge, and learn other things. 
+	share with people it is a good experience. 
+
+6. When you’re balancing multiple projects, how do you keep yourself organized?  priorizacion
+
+	If I am working with some method like scrum usually I used some framework for put the
+	tasks like azure
+
+7 What are your greatest strengths? habilidades
+
+	I Learn quickly and i have a good habilities to work on group like comunication and 
+	find solutions for the things and see other posibilities. 
+
+8 What do you consider to be your weaknesses?
+
+	I like to do the things quickly and some things take some time, 
+	I feel a little  frustade about that. but i work on that, doing meditation
+	doing plans to get the goal.
+
+9 What do you think is the most challenge thing working ? 
+
+	When i was working in homecenter, i was promoted to coordinator and 
+	I had to lead a team with twenthy two people, some of them were older than me, and 
+	its hard because they thoung that i didn´t have the knowledge for lead, but i showed 
+	them that i could work well,  and i can improve theirs habilities for get the goals for
+	the enterprice. 
+
+11 Tell me about a situation in which you proposed or implemented a new solution for a work problem because
+
+In Emergia, that is a contact center we worked to imporve the sales and the time for the sales people 
+some team had a problem because they was expending a lot time fill some formulary, like 10 minutes and it is a lot for 
+a contact center I proposed to did a RPA for fill that information that we have in a data base and decrese the time to 
+20 seconds and finally we did that and It had a good impact
+
+
+12 Describe a situation in which you had a common goal with your team but there were different points of view on how to achieve it
+
+So when i was working in homecenter I had a parner for lead the team, and they was focuse in some people 
+and I was focuse in other, we need to improve the one indicator of service call NPS and She had less traffict of clients 
+and she can work different to my doing tracing of the protocols but I only have one way that was improve the waiting time 
+for our clients  and we talk for merge both ways to work because all the team need to bee aline with each others and them 
+We saw the results in our indicator
+
+
+13 Tell me about a situation where you had a goal that you thought was unreachable
+
+In reactiva We developed some application for fill some information and they gave us 1 month and i  think 
+that is imposible because we had other thinks to do,  and i was the only one develop that should work on that. but
+But we took the challenge and we divide well the time and we can finish on time
+
+14 What were the two most relevant projects in your career?
+
+one of them is the riskMent suite, This project is an application that help the enterprices for managment the riks 
+So i am the developer with other 4 persons and we had a leader that manage and distribute the work 
+And i was working on azure for distribute the work working with c# and 
+
+
+15. The situation 
+
+	I will put the person in a safe zone and call the ensurance, 
+	so i ask to the person than know about that if he can help us and wait, 
+	I will call for help if they can send someone quickly for continue the work
+	if they can´t i gift them some instructions for continue the work
+	  
+
+---------------------------------------------------------------
+POO object-oriented programming
+
+Clase
+es una especie de "plantilla" en la que se definen los atributos y métodos predeterminados 
+de un tipo de objeto. 
+
+Herencia (Herarquizar)
+es el medio del cual una clase se deriva de otra de manera que extiende su funcionalidad.
+
+Objeto
+es una Instancia de una clase. 
+
+Método
+Algoritmo asociado a un objeto (o a una clase de objetos).
+
+Evento
+Es un suceso en el sistema como la creacion de un evento.
+
+Atributos
+Características que tiene la clase.
+
+Abstracciones
+Definir la estructura de una clase 
+es la acción de aislar los componentes esenciales de un objeto de aquellos que no lo son.
+Clase abstracta 
+puede tener metodos concretos y metodos abstractos no se instancia como objeto.
+interfaz 
+define un contrato que una clase puede implementar solo define la firma de los metodos de la clase a implementar.
+
+Encapsulamiento
+el encapsulamiento es cuando se realiza un ocultamiento del estado.
+Se colocan los elementos a un mismo nivel de abstraccion (private public)
+Modificadores de acceso
+public	Access is not restricted.
+protected	Access is limited to the containing class or types derived from the containing class.
+internal	Access is limited to the current assembly.
+protected internal	Access is limited to the current assembly or types derived from the containing class.
+private	Access is limited to the containing type.
+private protected	Access is limited to the containing class or types derived from the containing class within the current assembly.
+
+Polimorfismo
+Una clase se pueda ser invocada por otra con distintos objetos.
+hacer que una clase se comporte como otra. Vehiculo -- moto carro bicicleta heredan de vehiculo.
+Polimorfismo en tiempo compilacion (sobrecarga de metodos) Cuando tengo metodos con el mismo llamado pero recibe diferentes atributos 
+Polimorfismo en tiempo de ejecucion (Metoods virtuales ) Cuando tengo varias clases y se heredan de una sola y cada una requiere un metodo diferente entonces la sobre escribo con override para usar la de la clase y no la de la herencia. 
+
+-------------------------------------------------------------------------
+
+Standalone applications
+
+Aplicaciones de escritorio, o monoliticas que no requieren conexion a red. 
+
+-------------------------------------------------------------------------
+Programacion Concurrent 
+
+Hilos (Threads)  }
+System.Threading Espacios de ejecucion independientes.
+Thread thread = new Thread(DoWork);
+
+Tareas (Tasks) y Programación Paralela:
+System.Threading.Tasks Se utiliza para la programacion asincronica y paralela
+palabras clave como async y await 
+
+---------------------------------------------------------------------------
+Multithreading Programming
+
+Programacion multihilo es poner a ejecutar dos procesos en hilos independientes para que se ejecuten al mismo tiempo, 
+Es importante la sincronizacion de hilos  y hay herramientas como lock, Monitor, Mutex o Semaphore 
+lock es mas simple bloquea el hilo para usar elementos compartidos pero solo por el.
+monitor ofrece funcionalidades adicionales como enter exit wait pulse permite bloquearlo manual
+mutex puede sincronizar recursos compartidos entre múltiples procesos alcance mas amplio.
+semaphore permite controlar el acceso por un numero de hilos, genera mayor flexibilidad. 
+
+----------------------------------------------------------------------------
+Microservicios 
+
+Principios de Diseño para Microservicios:
+	Desacoplamiento:
+	Cada microservicio debe ser independiente y tener su propia lógica de negocio. Los servicios deben estar fuertemente desacoplados para que puedan evolucionar y escalarse de forma independiente.
+
+	Límites de Contexto:
+	Cada microservicio debe definir claramente su límite de contexto y ser responsable de una sola funcionalidad específica.
+
+	Comunicación entre Microservicios:
+	La comunicación entre microservicios puede realizarse a través de API RESTful, gRPC, mensajería asincrónica o eventos, según las necesidades del sistema.
+
+	Monitorización y Tolerancia a Fallos:
+	Es fundamental implementar técnicas de monitorización y manejo de errores en cada microservicio para garantizar la robustez del sistema.
+
+WCF (Windows Communication Foundation)
+Marco de trabajo para servicios web 
+Con protocolos HTTP, TCP, Named Pipes. 
+con diferentes formatos de mensaje como XML, JSON y binario
+
+Códigos de Estado Comunes en HTTP:
+1xx: Respuestas Informativas: Indican que la solicitud ha sido recibida y el servidor continúa procesándola.
+2xx: Respuestas Exitosas: Indican que la solicitud fue recibida, entendida y aceptada exitosamente.
+3xx: Redirecciones: Indican que el cliente necesita realizar más acciones para completar la solicitud.
+4xx: Errores del Cliente: Indican errores causados por acciones del cliente.
+5xx: Errores del Servidor: Indican que el servidor no pudo completar una solicitud válida.
+
+
+ASP.NET
+Se usaba como web.forms y mvc  en .Net framework 
+
+ASP.NET Core 
+Evolucion de asp.net, ya es multiplataforma 
+
+ASP.NET MVC Modelo vista controlador
+Es un marco de trabajo que implementa el patron de diseño MVC 
+---------------------------------------------------------------------------
+WEB API
+
+Web API en .NET se refiere a la capacidad de crear servicios web HTTP RESTful 
+Como los microservicios anteriores 
+
+
+----------------------------------------------------------------------------
+patrones de diseño design patterns
+
+-Para microservicios algunos patrones son: 
+	Patrón de API Gateway: es el responsable de enrutar las solicitudes a los otros dandole seguridad.
+	Patron de balanceo de carga: nginx lo hace automaticamente cuando una api tiene muchas solicitudes. 
+	Patrón de Base de Datos por Servicio: Cada api tiene su propia base de datos. 
+
+
+
+
+
+
+----------------------------------------------------------------------------
+Infraescructura
+ conjuntos de elementos para hacer que una aplicacion funcione. Servidor con sistema operativo, base de datos. 
+
+Dominio
+ parte de la solucion del negocio
+
+Controlador 
+un controlador es un componente de software que permite al sistema operativo y un dispositivo comunicarse entre sí. 
+
+-----------------------------------------
+
+Manejo de excepciones
+
+Try  atrapar o encapsular una parte del codigo
+Finally es la parte final que se va a ejecutar luego de encapsular
+Catch luego de capturar el control de la excepcion se ejecuta el codigo encapsulado
+
+Tipos de excepciones
+exception
+FormatException de formato de datos
+Nullreference
+indexoutofrange
+argument
+
+-----------------------------------------
+
+Arquitectura de software
+
+Patrones de Arquitectura
+
+	MVC  modelo vista controlador 
+	Modelo Data logica y reglas de negocio DTO
+	view  Representacion de la informacion
+	Controlador intermediarion entre la vista y el modelo
+
+	MVVM  modelo vista vista-modelo
+	Modelo Data logica y reglas de negocio DTO
+	view  Representacion de la informacion
+	vista-Modelo intermediarion entre la vista y el modelo 
+	se realiza la comunicacion por data biding cambios automaticos.
+
+
+	MVP Modelo vista presentador 
+	Modelo Data logica y reglas de negocio DTO
+	view  Representacion de la informacion
+	Presentador obtiene los datos del modelo y aplica la lógica de la 
+	interfaz de usuario para decidir qué mostrar.
+
+	por CAPAS 
+	Capa de presentación (también conocida como capa UI )
+	Capa de aplicación (también conocida como capa de servicio )
+	Capa de lógica de negocios (también conocida como capa de dominio )
+	Capa de acceso a datos (también conocida como capa de persistencia )
+
+	por capas:
+
+	Dominio: Contiene las clases que representan el dominio del problema, interfaces de repositorio y lógica de negocio.
+	Aplicación: Contiene clases que coordinan la ejecución de casos de uso utilizando las clases del dominio.
+	Infraestructura: Contiene implementaciones concretas, como persistencia (bases de datos, almacenamiento), configuración, etc.
+	Test: Contiene las pruebas unitarias y de integración organizadas de manera similar a las carpetas principales.
+
+	Cliente servidor
+	un servidor y múltiples clientes
+
+Paradigma
+DDD 
+
+
+Metodologia
+TDD 
+Diseñar una clase a empezando con las pruebas desde el caso base.
+
+-------------------------------------------------
+
+y los patrones de diseño  mas usados cuales son en cualquier arquitectura
+Patrones de diseño 
+Solucion general reutilizable a un problema 
+
+
+-//Patrones creacionales
+
+	Builder: Nos permite producir distintos tipos y representaciones de  un objeto empelando el mismo codigo de construccion.
+	Prototype - Patron que perm+ite clonar un objeto -  MemberwiseClone
+	Singleton  - este patron permite solo obtener la intancia de una clase. base de datos o gobierno. unitofwork
+	Factory Method - indica que un objeto que es una super clases que permite que construir objetos por medio de una interfaz 
+	(transporte con maritimo o terrestre)
+	Abstract Factory varias clases de un tipo cliente contraparte
+
+-//Patrones de comportamiento
+
+Observer - Publish y subscriber como cuando se suscribe a un periodito.
+
+-//Patrones Estructurales
+
+decorator -
+facade - uso de una interfaz para llamar una libreria de metodos. 
+
+----------------------------------------------------------
+
+Los principios de diseño son los objetivos deseables que uno se propone alcanzar 
+mientras que los patrones de diseño son los recursos que se pueden utilizar para alcanzar esos objetivos.
+
+Principios de diseños
+
+Pautas que ayudan a evitar un mal diseño
+
+
+Principíos SOLID son principios de diseño 
+
+single responsabiliti - responsabilidad unica 
+una clase debe tener solo una funcion o responsabilidad 
+
+open and close 
+Un metodo no tenga que ser modificado para implementar algun posible uso. 
+
+Liskov 
+Cada clase que se derive en otra puede ser sustituida en si
+
+segregación de interfaz
+Un cliente nunca debe ser forzado a implementar una interfaz que no usan ni los clientes no deben 
+ser forzados a depender de métodos que no usan.
+
+
+Principio de inversión de dependencia
+Las entidades deben depender de abstracciones, no de concreciones. 
+Indica que el módulo de alto nivel no debe depender del módulo de bajo nivel, sino que deben depender de las abstracciones.
+
+
+Programacion reactiva o asincrona Cuando no bloquea el hilo de la ejecución
+Programacion sincrona bloquea el hilo de la ejecucion ejecucion secuencial 
+
+
+Pruebas en Java  con  JUnit y mockito 
+
+NUnit, MSTest y xUnit 
+.Net trabaje con MSTest y XUnit 
+Arrange, Act, Assert (AAA): Organiza las pruebas en secciones claramente definidas: configuración (Arrange), acción (Act) y afirmación (Assert).
+
