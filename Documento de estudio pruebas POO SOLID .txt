@@ -90,10 +90,10 @@ And i was working on azure for distribute the work working with c# and
 	if they can´t i gift them some instructions for continue the work
 	  
 
----------------------------------------------------------------
+--------------------------------POO-------------------------------
 POO object-oriented programming
 
-Clase
+Clase  
 es una especie de "plantilla" en la que se definen los atributos y métodos predeterminados 
 de un tipo de objeto. 
 
@@ -137,13 +137,13 @@ hacer que una clase se comporte como otra. Vehiculo -- moto carro bicicleta here
 Polimorfismo en tiempo compilacion (sobrecarga de metodos) Cuando tengo metodos con el mismo llamado pero recibe diferentes atributos 
 Polimorfismo en tiempo de ejecucion (Metoods virtuales ) Cuando tengo varias clases y se heredan de una sola y cada una requiere un metodo diferente entonces la sobre escribo con override para usar la de la clase y no la de la herencia. 
 
--------------------------------------------------------------------------
+-----------------------------------STANDALONE--------------------------------------
 
 Standalone applications
 
 Aplicaciones de escritorio, o monoliticas que no requieren conexion a red. 
 
--------------------------------------------------------------------------
+----------------------------------CONCURRENTE---------------------------------------
 Programacion Concurrent 
 
 Hilos (Threads)  }
@@ -154,7 +154,10 @@ Tareas (Tasks) y Programación Paralela:
 System.Threading.Tasks Se utiliza para la programacion asincronica y paralela
 palabras clave como async y await 
 
----------------------------------------------------------------------------
+Programacion reactiva o asincrona Cuando no bloquea el hilo de la ejecución concurrente
+Programacion sincrona bloquea el hilo de la ejecucion ejecucion secuencial 
+
+-------------------------------MULTITHREADING--------------------------------------------
 Multithreading Programming
 
 Programacion multihilo es poner a ejecutar dos procesos en hilos independientes para que se ejecuten al mismo tiempo, 
@@ -164,7 +167,7 @@ monitor ofrece funcionalidades adicionales como enter exit wait pulse permite bl
 mutex puede sincronizar recursos compartidos entre múltiples procesos alcance mas amplio.
 semaphore permite controlar el acceso por un numero de hilos, genera mayor flexibilidad. 
 
-----------------------------------------------------------------------------
+------------------------------------MICROSERVICIOS----------------------------------------
 Microservicios 
 
 Principios de Diseño para Microservicios:
@@ -192,7 +195,6 @@ Códigos de Estado Comunes en HTTP:
 4xx: Errores del Cliente: Indican errores causados por acciones del cliente.
 5xx: Errores del Servidor: Indican que el servidor no pudo completar una solicitud válida.
 
-
 ASP.NET
 Se usaba como web.forms y mvc  en .Net framework 
 
@@ -201,52 +203,42 @@ Evolucion de asp.net, ya es multiplataforma
 
 ASP.NET MVC Modelo vista controlador
 Es un marco de trabajo que implementa el patron de diseño MVC 
----------------------------------------------------------------------------
+---------------------------------WEB API------------------------------------------
 WEB API
 
 Web API en .NET se refiere a la capacidad de crear servicios web HTTP RESTful 
 Como los microservicios anteriores 
 
-
-----------------------------------------------------------------------------
+----------------------------------PATTERNS PATRONES------------------------------------------
 patrones de diseño design patterns
+Solucion general reutilizable a un problema 
 
--Para microservicios algunos patrones son: 
+-//Para microservicios algunos patrones son: 
 	Patrón de API Gateway: es el responsable de enrutar las solicitudes a los otros dandole seguridad.
 	Patron de balanceo de carga: nginx lo hace automaticamente cuando una api tiene muchas solicitudes. 
 	Patrón de Base de Datos por Servicio: Cada api tiene su propia base de datos. 
 
+-//Patrones creacionales
 
+	Builder: Nos permite producir distintos tipos y representaciones de  un objeto empelando el mismo codigo de construccion.
+	Prototype - Patron que perm+ite clonar un objeto -  MemberwiseClone
+	Singleton  - este patron permite solo obtener la intancia de una clase. base de datos o gobierno. unitofwork
+	Factory Method - indica que un objeto que es una super clases que permite que construir objetos por medio de una interfaz 
+	(transporte con maritimo o terrestre)
+	Abstract Factory varias clases de un tipo cliente contraparte
 
+-//Patrones de comportamiento
 
+	Observer - Publish y subscriber como cuando se suscribe a un periodito.
+	Command - Convierte la solicitud en un objeto independiente con la informacion de la solicitud.  los command en Pirani. 
+	Chain of responsability - Pasar solicitudes a lo 
 
+-//Patrones Estructurales
 
-----------------------------------------------------------------------------
-Infraescructura
- conjuntos de elementos para hacer que una aplicacion funcione. Servidor con sistema operativo, base de datos. 
+	decorator -
+	facade - uso de una interfaz para llamar una libreria de metodos.
 
-Dominio
- parte de la solucion del negocio
-
-Controlador 
-un controlador es un componente de software que permite al sistema operativo y un dispositivo comunicarse entre sí. 
-
------------------------------------------
-
-Manejo de excepciones
-
-Try  atrapar o encapsular una parte del codigo
-Finally es la parte final que se va a ejecutar luego de encapsular
-Catch luego de capturar el control de la excepcion se ejecuta el codigo encapsulado
-
-Tipos de excepciones
-exception
-FormatException de formato de datos
-Nullreference
-indexoutofrange
-argument
-
------------------------------------------
+------------------------------PATRONES DE ARQUITECTURA----------------------------------------------
 
 Arquitectura de software
 
@@ -286,48 +278,11 @@ Patrones de Arquitectura
 	Cliente servidor
 	un servidor y múltiples clientes
 
-Paradigma
-DDD 
-
-
-Metodologia
-TDD 
-Diseñar una clase a empezando con las pruebas desde el caso base.
-
--------------------------------------------------
-
-y los patrones de diseño  mas usados cuales son en cualquier arquitectura
-Patrones de diseño 
-Solucion general reutilizable a un problema 
-
-
--//Patrones creacionales
-
-	Builder: Nos permite producir distintos tipos y representaciones de  un objeto empelando el mismo codigo de construccion.
-	Prototype - Patron que perm+ite clonar un objeto -  MemberwiseClone
-	Singleton  - este patron permite solo obtener la intancia de una clase. base de datos o gobierno. unitofwork
-	Factory Method - indica que un objeto que es una super clases que permite que construir objetos por medio de una interfaz 
-	(transporte con maritimo o terrestre)
-	Abstract Factory varias clases de un tipo cliente contraparte
-
--//Patrones de comportamiento
-
-Observer - Publish y subscriber como cuando se suscribe a un periodito.
-
--//Patrones Estructurales
-
-decorator -
-facade - uso de una interfaz para llamar una libreria de metodos. 
-
-----------------------------------------------------------
+------------------------------PRINCIPIOS SOLID----------------------------------------------
 
 Los principios de diseño son los objetivos deseables que uno se propone alcanzar 
 mientras que los patrones de diseño son los recursos que se pueden utilizar para alcanzar esos objetivos.
-
-Principios de diseños
-
-Pautas que ayudan a evitar un mal diseño
-
+Principios de diseños son Pautas que ayudan a evitar un mal diseño
 
 Principíos SOLID son principios de diseño 
 
@@ -342,21 +297,185 @@ Cada clase que se derive en otra puede ser sustituida en si
 
 segregación de interfaz
 Un cliente nunca debe ser forzado a implementar una interfaz que no usan ni los clientes no deben 
-ser forzados a depender de métodos que no usan.
-
+ser forzados a depender de métodos que no usan.	
 
 Principio de inversión de dependencia
 Las entidades deben depender de abstracciones, no de concreciones. 
 Indica que el módulo de alto nivel no debe depender del módulo de bajo nivel, sino que deben depender de las abstracciones.
 
+------------------------------PARADIGMA DDD----------------------------------------------
 
-Programacion reactiva o asincrona Cuando no bloquea el hilo de la ejecución
-Programacion sincrona bloquea el hilo de la ejecucion ejecucion secuencial 
+Paradigma
+DDD 
 
+------------------------------METODOLOGIA TDD----------------------------------------------
+
+Metodologia
+TDD 
+Diseñar una clase a empezando con las pruebas desde el caso base. 	
+
+------------------------------DEFINICIONES DE CARPETAS----------------------------------------------
+
+Infraescructura
+ conjuntos de elementos para hacer que una aplicacion funcione. Servidor con sistema operativo, base de datos. 
+
+Dominio
+ parte de la solucion del negocio
+
+Controlador 
+un controlador es un componente de software que permite al sistema operativo y un dispositivo comunicarse entre sí. 
+
+
+------------------------------LINQ----------------------------------------------
+
+
+LINQ (Language Integrated Query) es una característica de .NET que proporciona una forma consistente de consultar y manipular datos en .NET utilizando consultas similares a SQL dentro del código C# o VB.NET.
+
+from persona in personas
+where persona.Edad > 25 && persona.Ciudad == "Madrid"
+select persona;
+
+------------------------------CI/CD----------------------------------------------
+Integracion continua 
+Implica la integración automática y frecuente del código desarrollado por diferentes miembros del equipo en un repositorio compartido.
+
+Entrega continua 
+Amplía la CI al automatizar la entrega del código integrado a entornos de pruebas, de calidad y, potencialmente, de producción.
+
+Azure DevOps
+
+NuGet 
+
+Entity Framework o Dapper para el acceso a bases de datos
+
+
+------------------------------PRUEBAS UNITARIAS----------------------------------------------
 
 Pruebas en Java  con  JUnit y mockito 
 
 NUnit, MSTest y xUnit 
 .Net trabaje con MSTest y XUnit 
 Arrange, Act, Assert (AAA): Organiza las pruebas en secciones claramente definidas: configuración (Arrange), acción (Act) y afirmación (Assert).
+------------------------------MANEJO DE EXCEPCIONES----------------------------------------------
 
+Manejo de excepciones
+
+Try  atrapar o encapsular una parte del codigo
+Finally es la parte final que se va a ejecutar luego de encapsular
+Catch luego de capturar el control de la excepcion se ejecuta el codigo encapsulado
+
+Tipos de excepciones
+exception
+FormatException de formato de datos
+Nullreference
+indexoutofrange
+argument
+
+------------------------------ADO.NET----------------------------------------------
+
+ADO .NET Sirve para trabajar con Datos y base de datos en aplicacion 
+Nase de datos relacionales, XML y servicios web. 
+Mysql, SQL SERVER, Oracle
+comandos como:
+	SqlCommand 
+	OleDbCommand
+Acceso a Datos:
+	datareaders: para lectura
+	Datasets y DataAdapters
+
+ORM MAPEO OBJETO RELACIONAL OBJECT RELATIONAL MAP. 
+
+------------------------------ENTITY FRAMEWORK----------------------------------------------
+ORM MAPEO OBJETO RELACIONAL OBJECT RELATIONAL MAP. 
+
+------------------------------.Net Framework versiones----------------------------------------------
+.NET Framework 3.5 
+Linq 
+WCF 
+
+------------------------------Net Core 5----------------------------------------------
+
+------------------------------SQL SERVER----------------------------------------------
+
+------------------------------GIT----------------------------------------------
+
+------------------------------ANALIZAR CODIGO CON SONAR--------------------------------------------
+
+------------------------------MY EXPIRENCE AS DEVELOPER --------------------------------------------------
+
+I am system ingeneer graduated from caldas university, 
+so I have been working for 5  years as a developer,
+I am very enthusiastic about learning new things and taking on new challenges. 
+I work well in a team, and I enjoy collaborating with people who bring out the best in me, while also contributing my best to the team
+
+My most significant experiences as a developer have been in .Net. Previously, 
+I gained expertise in Java, where I worked on microservices and REST applications using Spring, Kotlin, MySQL, and AWS. In .NET, 
+
+my initial experience involved developing Robotic Process Automation (RPA) solutions for automating sales processes. 
+
+Following that, 
+I worked on microservices with WCF for a credit application, using .NET Framework 4.0, Dapper, LINQ, and SQL Server and Oracle databases, alongside ASP.NET. We utilized Dapper as the ORM, IIS for deployment, 
+
+and later, 
+I contributed to an on-premise application for risk management, covering SARLAFT risk, operational risk, and client segmentation. During this period, I worked with .NET Framework 4.5, Oracle, SQL Server, ASP.NET, Entity Framework as the ORM, AngularJS, followed Agile methodologies like SCRUM, utilized Azure DevOps for project management, and implemented unit tests. I am passionate about what I do and eager to continue expanding my skills.
+
+my biggest experience as a developer are in .Net, and my priviues expiriences was with Java, doing microservices REST working with Spring Kotlin Mysql AWS as a developer, In .NET my first expierience was doing RPA for automate sales process. after that i worked with microservices with WCF in a credit aplication working with .NET Framework 4.5 with dapper linq and SQL SERVER, and ORACLE and ASP.NET, DAPPER as ORM, IISS for deploy, and after that i was working in a onprimece aplication Was and aplication for manage de risks, SARLAFT risk, operational risk and segmentation of clients, I worked in that moment with .Net Framework  4.5.1, Oracle, SQL SERVER, ASP.NET, entity framework as ORM Angular JS, SCRUM, AZURE DEVOPS, UNIT TEST. so I am so entusiat  
+
+
+Soy ingeniero en sistemas de la universidad de Caldas con mas de 5 años de experiencia en desarrollo de software. Mi mayor experiencia de desarrollo es con tecnologias .Net, En los cuales he desarrollando:
+- Servicios WCF para una aplicacion de administracion de creditos, con front en ASP.NET, base de datos oracle (El mayor logro en esta fue estabilizarla y poderla sacar a un ambiente productivo estable),  
+- RPA's como software para mejorar procesos, con selenium. (El mayor logro fue mejorar los tiempos para los vendedores callcenter en un 70% en cada llamada). 
+- Desarrollando y mejorando una aplicacion de gestion de riesgos empresariales, y segmentacion de clientes, en esta trabaje con .Net framework 4.5, Entity framework, ASP.NET,  AngularJS, Angular 5,  bases de datos oracle y sql server, azure devops, Scrum, SOLID, Clean code, testing con MSTest, TDD, (Los logros valiosos para la empresa fueron, Mejora en la apariencia y diseño de la aplicacion para mejorar la experiencia de usuario,  Migracion a Nuevas tecnologias Front Angular 5, documentacion correcta de la arquitectura, implementar principios solid y clean code para mejorar la calidad del producto, Optimizar tiempos de procesamiento tanto en base de datos como en el funcionamiento de codigo, crear nuevas funcionalidades que se vendieron muy bien a los clientes). 
+- Desarrollar nueva aplicacion en Java para la Gestion de riesgos,  Arquitectura SOA, microservicios REST con spring, Kotlin, base de datos MySQL,  aplicando principios de diseño para microservicios, y principios SOLID, AWS,  Kubernetes, 
+Docker. (La aplicacion luego de crear e intregrar todos los servicios salio a produccion vendiendose muy bien y constantemente creando nuevas funcionalidades las cuales se sacaban spring a spring dando valor constantemente). 
+
+My previous experience as a developer was at Pirani, where I served as a backend developer. In this role, I was responsible for developing new features and resolve bugs. Working within the Scrum framework, my day typically began with the daily stand-up meeting. During these sessions, the team discussed our activities from the previous day, addressed any blockers, and tackled challenges encountered during our work.
+
+Following the daily stand-up, I reviewed the plan for the day and delved into the development process. Upon completing a task, I would upload the changes to the development environment and collaborate with the QA team for a thorough review. I actively participated in reviewing both my own and others' changes to ensure quality. Once validated, I would deploy the changes to other environments.
+
+In terms of technologies, I utilized .Net, Azure DevOps, and SQL Server, as well as Java, Spring, Kotlin, MySQL, and Jira. I was involved in the development of a new application featuring microservices and AngularJS. Additionally, I provided support for existing applications in the .Net stack."
+
+
+---------------------------------------------------------TEMAS A ESTUDIAR -------------------------------------------------------
+
+This role will suit a highly capable developer with at least ten years of experience with .NET/C#. Skills and experience must include:
+Excellent command / highly proficient in spoken and written English (working directly with UK/US based clients)
+Strong experience working with .NET, including
+Strong multithreading experience
+Strong unit and integration tests
+Entity Framework
+Strong experience in MongoDB or other NoSQL databases (data modelling and performance)
+Understanding of Synch and Async communication
+REST based
+Queue and/or Topic based (depending on technology)
+Proficiency in working with Microservice Architecture
+Including containerization, high availability and failover scenarios
+Experience in working with CI/CD pipelines
+Experience working with Azure or AWS
+Commercial experience with C++ would be a plus
+contratos Swagger (OpenAPI). 
+Apache Kafka
+
+---
+object-oriented programming
+Standalone applications
+Concurrent 
+Multithreading Programming
+Microservices
+Web API
+WCF
+patrones de diseño design patterns
+Principios SOLID
+Entity Framework, 
+LINQ 
+Integración Continua, 
+unit tests
+error logging
+.Net Framework versiones
+ADO.NET, 
+ASP.NET, 
+ASP.NET MVC,
+Net Core 5, 6 and 7, 
+Microsoft Azure, 
+SQL SERVER 
+git
